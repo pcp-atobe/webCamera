@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 
 var option = minimist(process.argv.slice(2));
 var plumberOptions = {
-  errorHandler: function (error) {
+  errorHandler: function (error) { 
     console.log(error.messageFormatted);
     this.emit('end');
   }
