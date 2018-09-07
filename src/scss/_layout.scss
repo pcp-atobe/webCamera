@@ -1,0 +1,79 @@
+html{
+  min-height: 100vh;
+  position:relative;
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  color: #333;
+  font-family:  "ヒラギノ角ゴ Pro W3", 'Hiragino Kaku Gothic ProN' , "メイリオ", Meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  &.is-overlay{
+    overflow: hidden;
+  }
+}
+
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+  outline: none;
+}
+
+a{
+  text-decoration: none;
+  transition: opacity 0.2s linear;
+  &:hover{
+    opacity: 0.8;
+  }
+}
+img{ max-width: 100%; }
+
+.text-center{
+  text-align: center;
+}
+
+.l-container{
+  padding: 0 10px;
+  margin:0 auto;
+  @media screen and (max-width: $screen-sm-max){ // PC
+    width: 1000px;
+  }
+  @media screen and (max-width: $screen-xs-max){ // ã‚¹ãƒžãƒ›
+    width: 100%;
+  }
+  @media screen and (min-width: $screen-sm-max){ // PC
+    width: 1000px;
+  }
+}
+
+
+.hidden-xs{
+  display: block!important;
+  @media screen and (max-width: $screen-xs-max){
+    display: none!important;
+  }
+}
+
+.hidden-xs-inline{
+  display: inline-block;
+  @media screen and (max-width: $screen-xs-max){
+    display: none;
+  }
+}
+
+.visible-xs{
+  display: none!important;
+  @media screen and (max-width: $screen-xs-max){
+    display: block!important;
+  }
+}
+
+.visible-xs-inline{
+  display: none;
+  @media screen and (max-width: $screen-xs-max){
+    display: inline-block;
+  }
+}

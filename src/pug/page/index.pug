@@ -1,0 +1,18 @@
+extends ../layout/layout.pug
+
+block vars
+  - var path = './'
+  
+block end_script
+  
+block main
+  main
+    .Capture
+      video(id="video" autoplay)
+      button(class="Capture-scan")
+        span
+          | button
+          i.fa.fa-arrow-right
+      
+    canvas(id="canvas")
+    

@@ -1,0 +1,35 @@
+.breadcrumb{
+  height: auto;
+  .breadcrumb-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 1.5;
+  }
+  .breadcrumb-item{
+    display: inline-flex;
+    a{
+      color: #1b68f6;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+      &:visited{
+        color: #681bf6;
+      }
+    }
+    a,span{
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+    }
+    span.breadcrumb-item-arrow{
+      margin: 0 8px;
+    }
+    &:first-child{
+      a:before{
+        display: none;
+      }
+    }
+  }
+}
